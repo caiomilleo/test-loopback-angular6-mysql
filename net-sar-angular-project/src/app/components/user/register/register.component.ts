@@ -19,10 +19,7 @@ export class RegisterComponent implements OnInit {
     if (form.valid) {
       this.authService.registerUser(this.user).subscribe(
         user => {
-          this.authService.setUser(user);
-          const token = user.id;
-          this.authService.setToken(token);
-          this.router.navigate(["/user/profile"]);
+          this.router.navigate(["/user/login"]);
         },
         res => {
           this.msgError = res.error.error.details.messages.email;
