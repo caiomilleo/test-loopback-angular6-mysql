@@ -1,0 +1,14 @@
+{
+  "db": { "name": "db", "connector": "memory" },
+  "mysql": {
+    "host": "YOUR HOST",
+    "port": "YOUR PORT",
+    "url": "",
+    "database": "netsar",
+    "password": "YOUR PASSWORD",
+    "name": "mysql",
+    "user": "YOUR USERNAME",
+    "connector": "mysql",
+    "createDatabase": true
+  }
+}

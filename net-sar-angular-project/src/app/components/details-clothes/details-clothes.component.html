@@ -1,0 +1,25 @@
+<section id="clothes">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 mx-auto">
+        <div class="card_clothes">
+          <div class="card">
+            <div class="card-body text-center">
+              <p>
+                <img
+                  class="img-fluid"
+                  src="{{ clothes.img }}"
+                  alt="{{ clothes.name }}"
+                />
+              </p>
+              <h4 routerLink="/clothes/{{ clothes.id }}" class="card-title">
+                {{ clothes.name }}
+              </h4>
+              <p class="card-text">{{ clothes.description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
